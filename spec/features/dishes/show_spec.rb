@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'dish show page', type: :feature do
-  it 'shows item info' do
+  it 'shows dish info' do
     chef_1 = Chef.create!(name: "Gordon Ramsay")
     dish_1 = chef_1.dishes.create!(name: "Beef Wellington", description: "Amazing")
     ingredient_1 = Ingredient.create!(name: "Wild Mushrooms", calories: 100)
